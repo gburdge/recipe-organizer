@@ -1,0 +1,193 @@
+my controller is -
+
+$scope.awesomeThings = [
+            'HTML5 Boilerplate',
+            'AngularJS',
+            'Karma'
+        ];
+
+        $scope.recipes = [
+            {
+                "ingredients": [
+                    {
+                        "url": "http://localhost:8001/ingredients/6/",
+                        "name": "salt"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/7/",
+                        "name": "pepper"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/12/",
+                        "name": "pork, ground"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/13/",
+                        "name": "meat, ground"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/17/",
+                        "name": "onion, white"
+                    }
+                ],
+                "url": "http://localhost:8001/recipes/2/",
+                "name": "Meatballs, Danish (Frikadeller)",
+                "description": "Straight from Denmark, this is a little labor-intensive, but once you get the hang of it, you'll be addicted! Serve warm with a brown sauce, small red boiled potatoes, and sweet and sour Danish red cabbage.\r\n",
+                "instructions": "Mix the veal and pork together in a bowl, and stir in the milk, onion, and egg. Mix the bread crumbs into the meat. Sprinkle in the flour, and knead well to mix. Stir in the 7-Up, season to taste with salt and pepper, and mix well. The mixture should be very moist, but not dripping.\r\nChill the meat mixture for 15 to 30 minutes in the refrigerator, to make the meatballs easier to form.\r\nHeat the margarine in a large skillet over medium heat. To form meatballs, scoop up about 2 1/2 tablespoons of meat mixture with a large spoon, and form the mixture into a slightly flattened, oval meatball about the size of a small egg. Place the meatballs into the heated skillet, and fry for about 15 minutes per side, until the meatballs are well-browned and no longer pink in the center."
+            },
+            {
+                "ingredients": [
+                    {
+                        "url": "http://localhost:8001/ingredients/8/",
+                        "name": "sugar"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/9/",
+                        "name": "rhubarb"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/10/",
+                        "name": "currant, black"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/11/",
+                        "name": "currant"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/43/",
+                        "name": "water"
+                    }
+                ],
+                "url": "http://localhost:8001/recipes/3/",
+                "name": "Red Berry Pudding with Cream (R\u00f8dgr\u00f8d med fl\u00f8de)",
+                "description": "R\u00f8dgr\u00f8d med fl\u00f8de, red berry pudding with cream, is the hallmark dessert of Denmark. Use tart berries like red currants if you can find them; if using strawberries, reduce the amount of sugar so it isn't too sweet. Many recipes include rhubarb as well.\r\n",
+                "instructions": "Clean the fruit well; chop rhubarb, if using, into 1-inch pieces. Place into nonreactive saucepan and cover with 3 cups water; simmer over medium low heat until the fruit falls apart. Remove from heat and strain juice through cheesecloth or a fine-meshed sieve; dispose of berry seeds. Return juice to heat, stir in sugar, and bring to a low boil; reduce heat to medium and add the dissolved potato flour liquid to thicken. Stir the mixture constantly until it begins to gel to the consistency of a heavy syrup. Remove from heat, pour into individual serving bowls, cover with cling wrap, and refrigerate for at least two hours and up to two days. Serve chilled with either plain or whipped cream."
+            },
+            {
+                "ingredients": [
+                    {
+                        "url": "http://localhost:8001/ingredients/8/",
+                        "name": "sugar"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/26/",
+                        "name": "baking powder"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/27/",
+                        "name": "baking soda"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/28/",
+                        "name": "egg yolks"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/29/",
+                        "name": "buttermilk"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/30/",
+                        "name": "oil, vegetable"
+                    }
+                ],
+                "url": "http://localhost:8001/recipes/4/",
+                "name": "\u00c6bleskiver - fluffy, light (\u00c6bleskiver)",
+                "description": "Danish dessert, served with glogg during the Advent. Cooked in a cast iron pan that resembles an egg poacher. Served hot, \u00c6bleskiver are not sweet but are traditionally served dipped in raspberry, strawberry, lingonberry or blackberry jam and sprinkled with powdered sugar.\r\n",
+                "instructions": "In a clean glass or metal bowl, beat the egg whites with an electric mixer until they can hold a stiff peak. Set aside.\r\nMix together the flour, baking powder, salt, baking soda, sugar, egg yolks, melted butter and buttermilk at one time and beat until smooth. Gently fold in the egg whites last.\r\nPut about 1 tbsp of vegetable oil in the bottom of each aebleskiver pan cup and heat until hot. Pour in about 2 tablespoons of the batter into each cup. As soon as they get bubbly around the edge, turn them quickly (Danish cooks use a long knitting needle, but a fork will work). Continue cooking, turning the ball to keep it from burning."
+            },
+            {
+                "ingredients": [
+                    {
+                        "url": "http://localhost:8001/ingredients/8/",
+                        "name": "sugar"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/14/",
+                        "name": "potato, red"
+                    }
+                ],
+                "url": "http://localhost:8001/recipes/6/",
+                "name": "Caramelized Potatoes (Brunede Kartofler)",
+                "description": "A classic Danish side dish typically served with Christmas dinner. The sweetness of the caramelized potatoes is wonderful with the other classic side dish R\u00f8dk\u00e5l (sweet and sour red cabbage).",
+                "instructions": "Boil potatoes in salted water until tender when gently forked. Drain potatoes and place in refrigerator to cool. Once potatoes are cold, remove peel. In a pan over medium-low heat melt sugar. Watch sugar carefully so it does not burn. When sugar has melted add butter, please note that it will bubble up, stir to combine. Add potatoes and cook low and slow, gently stirring occasionally until potatoes are warmed through. Enjoy!  "
+            },
+            {
+                "ingredients": [
+                    {
+                        "url": "http://localhost:8001/ingredients/6/",
+                        "name": "salt"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/8/",
+                        "name": "sugar"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/9/",
+                        "name": "rhubarb"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/31/",
+                        "name": "cabbage, red"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/36/",
+                        "name": "juice, Pomegranate"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/37/",
+                        "name": "cloves, ground"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/38/",
+                        "name": "Atamon"
+                    }
+                ],
+                "url": "http://localhost:8001/recipes/7/",
+                "name": "Red Cabbage, sweet & sour (R\u00f8dk\u00e5l)",
+                "description": "Slightly tangy sweet and sour red cabbage. Served hot or cold with Danish meatballs (frikadeller), pork chops, pork roast or duck. Particularly popular around Christmas. \r\n",
+                "instructions": "Remove outer leaves of cabbage, cut into quarters, remove the tough white core and discard. Slice cabbage into desired thickness. Place cabbage  into cooking pot and add vinegar, juice, sugar, salt and ground cloves. Let it simmer covered for 3 hours, stirring occasionally. At  the end of cooking time add the butter and gently stir until melted. If cabbage is to be used fairly quickly, simply just sterilize jars and lids with boiling water. If cabbage is intended for storing away, rinse jars and lids with Atamon. Store in cool, dark place. Enjoy!"
+            },
+            {
+                "ingredients": [
+                    {
+                        "url": "http://localhost:8001/ingredients/6/",
+                        "name": "salt"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/7/",
+                        "name": "pepper"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/16/",
+                        "name": "onion, yellow"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/33/",
+                        "name": "bacon"
+                    },
+                    {
+                        "url": "http://localhost:8001/ingredients/34/",
+                        "name": "pork chop"
+                    }
+                ],
+                "url": "http://localhost:8001/recipes/8/",
+                "name": "Pork Chops dish (Koteletter i Fad)",
+                "description": "Do not miss out on this popular recipe for pork chops in a dish. The recipe is easy and straightforward and tastes really good!",
+                "instructions": "Chops beaten/tenderized and turned over in flour, browned in a pan on both sides. You lay on a greased dish. Fry onion and bacon cubes in a pan and then add mushrooms.  Add a little water as needed, season with parsley, salt and pepper. Pour sauce over pork chops. Cover, with foil or lid and fry finished in the oven at 200 degrees for 20 - 30 min."
+            },
+            {
+                "ingredients": [
+                    {
+                        "url": "http://localhost:8001/ingredients/6/",
+                        "name": "salt"
+                    }
+                ],
+                "url": "http://localhost:8001/recipes/9/",
+                "name": "soup",
+                "description": "tomato soup.",
+                "instructions": "heat it up."
+            }
+        ]
+
+
+    });

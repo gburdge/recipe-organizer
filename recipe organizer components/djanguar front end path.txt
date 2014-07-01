@@ -1,0 +1,8 @@
+djangular front end path
+
+grunt serve
+
+http://localhost:9000/#/
+
+ctl a 
+ctl alt l

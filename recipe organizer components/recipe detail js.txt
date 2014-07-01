@@ -1,0 +1,45 @@
+recipe-detail.js is -
+
+/**
+ * Created by Gregory on 6/27/2014.
+ */
+'use strict';
+
+/**
+ * @ngdoc function
+ * @name djangularFrontendApp.controller:AboutCtrl
+ * @description
+ * # AboutCtrl
+ * Controller of the djangularFrontendApp
+ */
+angular.module('djangularFrontendApp')
+    .controller('RecipeDetailCtrl', function ($scope) {
+        $scope.recipe = {
+            "ingredients": [
+                {
+                    "url": "http://localhost:8001/ingredients/6/",
+                    "name": "salt"
+                },
+                {
+                    "url": "http://localhost:8001/ingredients/7/",
+                    "name": "pepper"
+                },
+                {
+                    "url": "http://localhost:8001/ingredients/12/",
+                    "name": "pork, ground"
+                },
+                {
+                    "url": "http://localhost:8001/ingredients/13/",
+                    "name": "meat, ground"
+                },
+                {
+                    "url": "http://localhost:8001/ingredients/17/",
+                    "name": "onion, white"
+                }
+            ],
+            "url": "http://localhost:8001/recipes/2/",
+            "name": "Meatballs, Danish (Frikadeller)",
+            "description": "Straight from Denmark, this is a little labor-intensive, but once you get the hang of it, you'll be addicted! Serve warm with a brown sauce, small red boiled potatoes, and sweet and sour Danish red cabbage.\r\n",
+            "instructions": "Mix the veal and pork together in a bowl, and stir in the milk, onion, and egg. Mix the bread crumbs into the meat. Sprinkle in the flour, and knead well to mix. Stir in the 7-Up, season to taste with salt and pepper, and mix well. The mixture should be very moist, but not dripping.\r\nChill the meat mixture for 15 to 30 minutes in the refrigerator, to make the meatballs easier to form.\r\nHeat the margarine in a large skillet over medium heat. To form meatballs, scoop up about 2 1/2 tablespoons of meat mixture with a large spoon, and form the mixture into a slightly flattened, oval meatball about the size of a small egg. Place the meatballs into the heated skillet, and fry for about 15 minutes per side, until the meatballs are well-browned and no longer pink in the center."
+        }
+    });

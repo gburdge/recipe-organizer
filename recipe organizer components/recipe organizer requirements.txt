@@ -1,0 +1,13 @@
+Ideas for Recipe Organizer:
+
+Add, edit, and delete a recipe
+Sign up/login
+Photos of the recipe
+Search bar
+Recipe description
+Categories/tags
+Cross reference to similar recipes
+Recipe-specific information
+Organize by categories/tags
+Rate recipes
+Share recipes
