@@ -1,59 +1,33 @@
-<!--<h1>'Allo, 'Allo!</h1>
-<p class="lead">
-  <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-  Always a pleasure scaffolding your apps.
-</p>
-<p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
-
-<div class="row marketing">
-<h4>HTML5 Boilerplate</h4>
-<p>
-  HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-</p>
-
-<h4>Angular</h4>
-<p>
-  AngularJS is a toolset for building the framework most suited to your application development.
-</p>
-
-<h4>Karma</h4>
-<p>Spectacular Test Runner for JavaScript.</p>-->
-
-<!--<div class="row">
-    <div ng-repeat="recipe in recipes" class="col-md-4">
-        <p>{{ recipe.image }}</p>
-        <p>{{ recipe.name }}</p>
-
-        <p>{{ recipe.description }}</p>
-
-        <p>{{ recipe.instructions }}</p>
-    </div>
-</div>-->
-
 <div ng-repeat="recipe in recipes">
 <span ng-if="$index % 3 == 0">
   <hr/>
   <div class="row">
-      <h3 class="col-md-4" ng-if="recipes[$index+0]">
-          <img src="{{ recipe.image }}">
-          <a href="#/recipes/{{recipes[$index+0].id}}">{{recipes[$index+0].name}}</a>
-          <p class="small">{{recipes[$index+0].description}}</p>
-          <p>{{recipes[$index+0].ingredient}}</p>
+      <h3 class="col-md-4 portfolio-item" ng-if="recipes[$index+0]">
+          <img class="img-responsive" src="http://placehold.it/700x400">
+          <a href="#/recipes/{{ recipes[$index+0].id}}">{{ recipes[$index+0].name}}</a>
+
+          <p class="small">{{ recipes[$index+0].description}}</p>
+
+          <p>{{ recipes[$index+0].ingredient}}</p>
       </h3>
 
-      <h3 class="col-md-4" ng-if="recipes[$index+1]">
-          <a href="#/recipes/{{recipes[$index+1].id}}">{{recipes[$index+1].name}}</a>
-          <p class="small">{{recipes[$index+1].description}}</p>
-          <p>{{recipes[$index+1].ingredient}}</p>
+      <h3 class="col-md-4 portfolio-item" ng-if="recipes[$index+1]">
+          <img class="img-responsive" src="http://placehold.it/700x400">
+          <a href="#/recipes/{{ recipes[$index+1].id}}">{{ recipes[$index+1].name}}</a>
+
+          <p class="small">{{ recipes[$index+1].description}}</p>
+
+          <p>{{ recipes[$index+1].ingredient}}</p>
       </h3>
 
-      <h3 class="col-md-4" ng-if="recipes[$index+2]">
-          <a href="#/recipes/{{recipes[$index+2].id}}">{{recipes[$index+2].name}}</a>
-          <p class="small">{{recipes[$index+2].description}}</p>
-          <p>{{recipes[$index+2].ingredient}}</p>
+      <h3 class="col-md-4 portfolio-item" ng-if="recipes[$index+2]">
+          <img class="img-responsive" src="http://placehold.it/700x400">
+          <a href="#/recipes/{{ recipes[$index+2].id}}">{{ recipes[$index+2].name}}</a>
+
+          <p class="small">{{ recipes[$index+2].description}}</p>
+
+          <p>{{ recipes[$index+2].ingredient}}</p>
       </h3>
   </div>
 </span>
 </div>
-
