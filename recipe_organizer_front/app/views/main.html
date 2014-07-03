@@ -1,33 +1,10 @@
 <div ng-repeat="recipe in recipes | filter:query">
-<span ng-if="$index % 3 == 0">
-  <hr/>
-  <div class="row">
-      <h3 class="col-md-4 portfolio-item" ng-if="recipes[$index+0]">
+
+     <h3 class="col-md-4 portfolio-item">
           <img class="img-responsive" src="http://placehold.it/700x400">
-          <a href="#/recipes/{{ recipes[$index+0].id}}">{{ recipes[$index+0].name}}</a>
+          <a href="#/recipes/{{ recipe.id }}">{{ recipe.name }}</a>
 
-          <p class="small">{{ recipes[$index+0].description}}</p>
+          <p class="small">{{ recipe.description }}</p>
 
-          <p>{{ recipes[$index+0].ingredient}}</p>
-      </h3>
-
-      <h3 class="col-md-4 portfolio-item" ng-if="recipes[$index+1]">
-          <img class="img-responsive" src="http://placehold.it/700x400">
-          <a href="#/recipes/{{ recipes[$index+1].id}}">{{ recipes[$index+1].name}}</a>
-
-          <p class="small">{{ recipes[$index+1].description}}</p>
-
-          <p>{{ recipes[$index+1].ingredient}}</p>
-      </h3>
-
-      <h3 class="col-md-4 portfolio-item" ng-if="recipes[$index+2]">
-          <img class="img-responsive" src="http://placehold.it/700x400">
-          <a href="#/recipes/{{ recipes[$index+2].id}}">{{ recipes[$index+2].name}}</a>
-
-          <p class="small">{{ recipes[$index+2].description}}</p>
-
-          <p>{{ recipes[$index+2].ingredient}}</p>
-      </h3>
-  </div>
-</span>
+          <p>{{ recipe.ingredient }}</p>
 </div>
