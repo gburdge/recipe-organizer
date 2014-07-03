@@ -6,7 +6,8 @@ from django.db import models
 class Recipe(models.Model):
     name = models.CharField(max_length=50)
     description = models.TextField(default="To be done later.")
-    ingredients = models.ManyToManyField('Ingredient')
+    ingredients = models.ManyToManyField('Ingredient', null=True, blank=True)
+
     instructions = models.TextField(default="To be done later.")
     image = models.CharField(max_length=500, default="no image")
 
