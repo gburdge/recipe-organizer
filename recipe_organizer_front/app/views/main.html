@@ -1,7 +1,7 @@
 <div ng-repeat="recipe in recipes | filter:query">
 
      <h3 class="col-md-4 portfolio-item">
-          <img class="img-responsive" src="http://placehold.it/700x400">
+          <img class="img-responsive" src="../images/{{ recipe.image }}">
           <a href="#/recipes/{{ recipe.id }}">{{ recipe.name }}</a>
 
           <p class="small">{{ recipe.description }}</p>
