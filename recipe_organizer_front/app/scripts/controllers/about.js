@@ -1,17 +1,22 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name djangularFrontendApp.controller:AboutCtrl
- * @description
- * # AboutCtrl
- * Controller of the djangularFrontendApp
- */
-angular.module('djangularFrontendApp')
-  .controller('AboutCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+describe('Controller: AboutCtrl', function () {
+
+  // load the controller's module
+  beforeEach(module('djangularFrontendApp'));
+
+  var AboutCtrl,
+    scope;
+
+  // Initialize the controller and a mock scope
+  beforeEach(inject(function ($controller, $rootScope) {
+    scope = $rootScope.$new();
+    AboutCtrl = $controller('AboutCtrl', {
+      $scope: scope
+    });
+  }));
+
+  it('should attach a list of awesomeThings to the scope', function () {
+    expect(scope.awesomeThings.length).toBe(3);
   });
+});
