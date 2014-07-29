@@ -8,7 +8,7 @@ class Recipe(models.Model):
     description = models.TextField(default="To be done later.")
     ingredients = models.ManyToManyField('Ingredient', null=True, blank=True)
 
-    instructions = models.TextField(default="To be done later.")
+    Directions = models.TextField(default="To be done later.")
     image = models.CharField(max_length=500, default="no image")
 
     def __unicode__(self):
