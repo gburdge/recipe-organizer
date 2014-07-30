@@ -1,22 +1,23 @@
 'use strict';
 
-describe('Controller: AddRecipeCtrl', function () {
+/**
+ * @ngdoc function
+ * @name recipeOrganizerFrontApp.controller:AddRecipeCtrl
+ * @description
+ * # AddRecipeCtrl
+ * Controller of the recipeOrganizerFrontApp
+ */
+angular.module('recipeOrganizerFrontApp')
+    .controller('AddRecipeCtrl', function ($scope, Restangular) {
+        $scope.recipe = {};
+        $scope.saveNewRecipe = function () {
 
-  // load the controller's module
-  beforeEach(module('djangularFrontendApp'));
+            Restangular.all('add-recipe').customPOST($scope.recipe).then(function () {
+                $scope.status = alert("The recipe was successfully created!");
+                $scope.recipe = {}
 
-  var AddRecipeCtrl,
-    scope;
-
-  // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
-    scope = $rootScope.$new();
-    AddRecipeCtrl = $controller('AddRecipeCtrl', {
-      $scope: scope
+            }, function () {
+                $scope.status = "The recipe couldn't be saved";
+            });
+        };
     });
-  }));
-
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
-  });
-});
