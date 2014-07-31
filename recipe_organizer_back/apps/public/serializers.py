@@ -12,8 +12,17 @@ class IngredientCategorySerializer(serializers.ModelSerializer):
         model = IngredientCategory
 
 
+class MeasurementSerializer(serializers.ModelSerializer):
+    ingredient = IngredientSerializer()
+
+    class Meta:
+        model = Measurement
+
+
 class RecipeSerializer(serializers.ModelSerializer):
-    ingredients = IngredientSerializer(many=True)
+    measurement_set = MeasurementSerializer(many=True)
 
     class Meta:
         model = Recipe
+
+
