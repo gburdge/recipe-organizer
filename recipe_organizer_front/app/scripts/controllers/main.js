@@ -9,7 +9,7 @@
  */
 angular.module('djangularFrontendApp')
     .controller('MainCtrl', function ($scope, Restangular) {
-        Restangular.all('recipes/').getList().then(function (data) {
+        Restangular.all('recipes').getList().then(function (data) {
             $scope.recipes = data;
             console.log($scope.recipes);
         });
