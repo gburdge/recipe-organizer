@@ -7,7 +7,7 @@
  * # AddRecipeCtrl
  * Controller of the recipeOrganizerFrontApp
  */
-angular.module('recipeOrganizerFrontApp')
+angular.module('djangularFrontendApp')
     .controller('AddRecipeCtrl', function ($scope, Restangular) {
         $scope.recipe = {};
         $scope.saveNewRecipe = function () {
