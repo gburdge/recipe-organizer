@@ -3,10 +3,18 @@ body {
 	background-image: url('../images/flag.jpg');
 	background-size: cover;
 	text-shadow: 1px 1px;
+
+.img-responsive {width: 200px ; height: 200px}
+
+
+.Main-Tag{
+  background-color: #EEEEEE;
 }
 
 .portfolio-item {
 	margin-bottom: 25px;
+    background-color: white;
+    height: 380px
 }
 
 footer {

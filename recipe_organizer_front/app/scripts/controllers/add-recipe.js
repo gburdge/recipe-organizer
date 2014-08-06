@@ -12,7 +12,9 @@ angular.module('djangularFrontendApp')
         $scope.recipe = {};
         $scope.saveNewRecipe = function () {
 
-            Restangular.all('add-recipe').customPOST($scope.recipe).then(function () {
+            console.log($scope.recipe);
+
+            Restangular.all('recipes').customPOST($scope.recipe).then(function () {
                 $scope.status = alert("The recipe was successfully created!");
                 $scope.recipe = {}
 
