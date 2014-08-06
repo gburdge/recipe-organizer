@@ -14,8 +14,7 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    url(r'^recipes/$', RecipeList.as_view(), name='recipe-list'),
-    url(r'^add-recipe/$', AddRecipe.as_view(), name='add-recipe'),
+    url(r'^recipes$', RecipeList.as_view(), name='recipe-list'),
     url(r'^recipes/(?P<pk>[0-9]+$)', RecipeDetail.as_view(), name='recipe-list')
 )
 

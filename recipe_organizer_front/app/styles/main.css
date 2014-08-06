@@ -1,5 +1,9 @@
 /* Space out content a bit */
 body {
+  background-image:url('/images/Dannebrog.png');
+  background-repeat: no-repeat;
+}
+
   padding-top: 20px;
   padding-bottom: 20px;
 }
