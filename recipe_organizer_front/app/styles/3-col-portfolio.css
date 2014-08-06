@@ -1,7 +1,8 @@
 body {
 	margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
-    background-image:url('/images/Dannebrog.jpg');
-    background-repeat: repeat;}
+	background-image: url('../images/flag.jpg');
+	background-size: cover;
+	text-shadow: 1px 1px;
 
 .img-responsive {width: 200px ; height: 200px}
 
