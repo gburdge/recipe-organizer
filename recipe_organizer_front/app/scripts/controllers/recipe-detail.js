@@ -11,7 +11,7 @@ angular.module('djangularFrontendApp')
     .controller('RecipeDetailCtrl', function ($scope, $routeParams, Restangular, $location) {
         $scope.recipeId = $routeParams.recipeId;
 
-        Restangular.one('recipes', $scope.recipeId).customGET().then(function (data) {
+        Restangular.one('recipes/', $scope.recipeId).customGET().then(function (data) {
             $scope.recipe = data;
         });
 

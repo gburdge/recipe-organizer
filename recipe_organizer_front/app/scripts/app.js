@@ -39,5 +39,5 @@ angular
             .otherwise({
                 redirectTo: '/'
             });
-        RestangularProvider.setBaseUrl('http://localhost:8001');
+        RestangularProvider.setBaseUrl('/api');
     });
